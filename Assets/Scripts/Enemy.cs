@@ -13,6 +13,6 @@ public class Enemy : MonoBehaviour
     }
     private void OnDead()
     {
-        Character.GameProxy.AddGold(Gold);
+        Character.MainIndicators.AddGold(Gold);
     }
 }
