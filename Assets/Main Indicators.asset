@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Main Indicators
   m_EditorClassIdentifier: 
   DamageStartLevel: 0
-  StartDamage: 10
-  StartDamagePrice: 10
+  BaseDamage: 100
+  BaseDamagePrice: 10
   DamagePricePerLevel: 2
   DamagePerLevel: 3
   StartScores: 100

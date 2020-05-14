@@ -21,7 +21,24 @@ public class Health : MonoBehaviour
 
     public void Damage(float value)
     {
-        Hitpoints = Mathf.Max(0f, Hitpoints - value);
+        int crit = UnityEngine.Random.Range(0, 100);
+        Debug.Log("crit = "+crit);
+        if (crit > 90)
+        {
+            Debug.Log("Промах. Ты лох!");
+        }
+        else if (crit > MainIndicators.StartCritDamage)
+        {
+            Hitpoints = Mathf.Max(0f, Hitpoints - value);
+            //проверку надо
+            GetComponent<Animator>().SetTrigger("Hit");
+        }
+        else
+        {
+            Hitpoints = Mathf.Max(0f, Hitpoints - 2 * value);
+            //проверку надо
+            GetComponent<Animator>().SetTrigger("Hit");
+        }
         GameProxy.WoundEvent(Hitpoints);
         if (Hitpoints <= 0f)
         {

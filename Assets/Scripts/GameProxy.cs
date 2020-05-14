@@ -8,6 +8,7 @@ public class GameProxy : ScriptableObject
 	public event Action NewGameEvent;
 	public event Action EndGameEvent;
 	public event Action NeedSpawnMonsterEvent;
+	public event Action WoundToMonster;
 	public event Action<float> EditHealthBarEvent;
 	public event Action<Character> PlayerChangeEvent;
 
@@ -21,6 +22,7 @@ public class GameProxy : ScriptableObject
 	}
 	public void WoundEvent(float Hitpoints)
 	{
+		WoundToMonster?.Invoke();
 		EditHealthBarEvent?.Invoke(Hitpoints);
 	}
 }

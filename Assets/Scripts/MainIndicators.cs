@@ -6,11 +6,12 @@ using UnityEngine;
 public class MainIndicators : ScriptableObject
 {
     public int DamageStartLevel = 0;
-    public int BaseDamage = 10;
+    public int BaseDamage = 100;
     public int BaseDamagePrice = 10;
     public double DamagePricePerLevel = 1.07F;
     public int DamagePerLevel = 3;
     public double StartScores = 100;
+    public int StartCritDamage = 20;
         
     public event Action<double> AddScoreEvent;
     public double Scores { get; set; }
