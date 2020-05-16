@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3074069314959358114}
   - component: {fileID: 3074069314959358118}
   - component: {fileID: 3074069314959358115}
+  - component: {fileID: 5857995117127615036}
   - component: {fileID: 3074069314959358119}
   - component: {fileID: 5600387908130097384}
   m_Layer: 0
@@ -30,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3074069314959358112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1.579, y: 1.579, z: 1.579}
   m_Children: []
   m_Father: {fileID: 0}
@@ -115,6 +116,7 @@ MonoBehaviour:
   MainIndicators: {fileID: 11400000, guid: 1f68f6a3c36ac0148b6b07747ca3208e, type: 2}
   EnemyIndicators: {fileID: 11400000, guid: cee4e09b76640d14693f1fe867f438da, type: 2}
   Health: {fileID: 3074069314959358115}
+  Attack: {fileID: 5857995117127615036}
 --- !u!114 &3074069314959358115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,9 +129,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9908a03214eb888438e62fe2f28d80ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainIndicators: {fileID: 11400000, guid: 1f68f6a3c36ac0148b6b07747ca3208e, type: 2}
-  GameProxy: {fileID: 11400000, guid: 9290654198f9a5744aeeb8f431aea8b1, type: 2}
   HitpointMax: 100
+--- !u!114 &5857995117127615036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074069314959358112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7591f93ab50f874cb8a8c108e0428bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0
 --- !u!114 &3074069314959358119
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cb0f2f14698f941b4673082a53a5a1, type: 3}
+  m_Name: Main Indicators
+  m_EditorClassIdentifier: 
+  StartLevel: 0
+  BaseDamage: 100
+  DamagePerLevel: 3
+  BaseDamagePrice: 10
+  DamagePricePerLevel: 2
+  BaseHitpoints: 200
+  HitpointsPerLevel: 5
+  BaseHitpointsPrice: 10
+  HitpointsPricePerLevel: 1.07
+  BaseHeal: 10
+  HealPerLevel: 5
+  BaseHealPrice: 10
+  HealPricePerLevel: 1.07
+  StartScores: 1000
+  StartCritChance: 20
